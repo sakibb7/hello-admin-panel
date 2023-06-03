@@ -4,7 +4,7 @@ import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "./scenes/global/Topbar";
 
-import SideBar from "./scenes/global/SideBar";
+import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team";
 import Invoices from "./scenes/invoices";
@@ -25,7 +25,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <SideBar isSidebar={isSidebar} />
+          <Sidebar isSidebar={isSidebar} />
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar} />
             <Routes>
